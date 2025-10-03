@@ -11,6 +11,12 @@ body {
   padding: 20px;
 }
 
+body {
+  background: linear-gradient(180deg, #1C1F26, #2E2E2E);
+  margin: 0;
+  color: #F6F4EC;
+}
+
 .palette-mosaic-regular {
   font-family: "Palette Mosaic", system-ui;
   font-weight: 400;
