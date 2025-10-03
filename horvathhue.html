@@ -3,9 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Horvath Hue</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Notable&family=Palette+Mosaic&display=swap" rel="stylesheet">
+	
+ <style>
+    /* Top bar styling */
+    .topbar {
+      width: 100%;
+      background-color: #EDE6D6; /* bar color */
+      color: #black;           /* text color */
+      text-align: center;    /* center text */
+      padding: 20px 0;       /* space inside bar */
+      font-size: 20px;       /* text size */
+      font-weight: bold;
+      position: fixed;       /* stays at top */
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    /* Add some page spacing so content is visible below bar */
+    body {
+      margin: 0;
+      padding-top: 60px; /* push content down */
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-	<h1>Horvath Hue</h1>
+	 <div class="topbar notable-regular">
+    HORVATH.HUE
+  </div>
+
+  <div>
+    <h1 class="notable-regular">Welcome to my page</h1>
+    <p>This is some sample text below the top bar.</p>
+  </div>
+
 </body>
 </html>

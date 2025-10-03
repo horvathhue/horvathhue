@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Base text style */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff; /* optional */
+  margin: 0;
+  padding: 20px;
+}
+
+.palette-mosaic-regular {
+  font-family: "Palette Mosaic", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.notable-regular {
+  font-family: "Notable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Headings */
+h1 {
+  font-size: 45px;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  margin: 10px 0 20px 40px;
+  font-size: 16px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 8px;
+}
