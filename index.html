@@ -42,30 +42,31 @@
 </head>
 
 <body>
-	 <div class="topbar notable-regular">
-    HORVATH HUE
+ <main class="flex-grow-1">
+	
+	<!--Top Bar Code-->
+	
+	<div class="topbar notable-regular d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 px-4 py-3">
+  	<div class="brand-name text-ivory text-center">HORVATH HUE</div>
+
+  	<div class="lang-switch position-absolute end-0 me-4">
+   	 	<button id="lang-en" class="lang-btn active" onclick="setLanguage('en')">ENG</button> /
+    	<button id="lang-hu" class="lang-btn" onclick="setLanguage('hu')">HU</button>
   	</div>
+	</div>
 
 	<div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-10">
 
-        <!-- Video wrapper -->
+     <!-- Video wrapper -->
         <div class="ratio ratio-16x9 mb-4">
           <!-- YouTube embed example -->
-          <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="YouTube video"
-            allowfullscreen
-          ></iframe>
-
-          <!-- For Vimeo, replace the iframe above with:
           <iframe
             src="https://player.vimeo.com/video/VIDEO_ID"
             title="Vimeo video"
             allowfullscreen
-          ></iframe>
-          -->
+		  ></iframe>
         </div>
 
         <!-- Title under the video -->
@@ -105,17 +106,27 @@
   		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
   		crossorigin="anonymous"></script>
 	
-	<footer class="footer">
-  	<div class="footer-content">
-    <h3 class="brand-name notable-regular">Horvath Hue</h3>
-    <p>© 2025 HorvathHue. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-      <span>•</span>
-      <a href="https://tiktok.com/@yourusername" target="_blank">TikTok</a>
+</main>
+	
+	<footer class="footer mt-auto">
+    <div class="footer-content text-center">
+      <h3 class="brand-name notable-regular">Horvath Hue</h3>
+      <p>© 2025 HorvathHue. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+        <span>•</span>
+        <a href="https://tiktok.com/@yourusername" target="_blank">TikTok</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 	
 </body>
+	
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  document.getElementById(`lang-${lang}`).classList.add('active');
+  console.log("Language switched to:", lang);
+}
+</script>
 </html>
