@@ -6,15 +6,31 @@ body {
   font-size: 16px;
   color: #333;
   line-height: 1.6;
-  background-color: #fff; /* optional */
+  background-color: #1C1F26; /* optional */
   margin: 0;
   padding: 20px;
 }
 
 body {
-  background: linear-gradient(180deg, #1C1F26, #2E2E2E);
-  margin: 0;
+  background: linear-gradient(180deg, #1C1F26 0%, #2A2F38 100%);
   color: #F6F4EC;
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(180deg, #1C1F26 0%, #2A2F38 100%);
+  color: #F6F4EC;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.text-ivory {
+  color: #F6F4EC;
+}
+
+img {
+  object-fit: cover;
 }
 
 .footer {
@@ -75,8 +91,8 @@ h1 {
 
 h2 {
   font-size: 28px;
-  color: #333;
-  margin-bottom: 12px;
+  color: #F6F4EC;
+  margin-bottom: 0px;
 }
 
 h3 {
