@@ -17,6 +17,41 @@ body {
   color: #F6F4EC;
 }
 
+.footer {
+  background-color: #1C1F26; /* dark base */
+  color: #F6F4EC;            /* warm ivory */
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: "Poppins", sans-serif;
+  border-top: 1px solid #3A3A3A;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer .brand-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.footer .social-links {
+  margin-top: 1rem;
+}
+
+.footer .social-links a {
+  color: #F6F4EC;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #D4BFAA; /* soft warm tone for hover */
+}
+
 .palette-mosaic-regular {
   font-family: "Palette Mosaic", system-ui;
   font-weight: 400;
