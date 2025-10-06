@@ -71,7 +71,60 @@ img {
   object-fit: cover;
 }
 
+#contact {
+  background-color: #1C1F26;
+  color: #F6F4EC;
+  padding: 4rem 1rem;
+}
+
+.contact-email {
+  color: #D4BFAA;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  border-bottom: 1px solid #D4BFAA;
+}
+
+.form-control {
+  background-color: #2A2F38;
+  border: 1px solid #3A3A3A;
+  color: #F6F4EC;
+  border-radius: 0.5rem;
+}
+
+.form-control:focus {
+  border-color: #D4BFAA;
+  box-shadow: 0 0 0 0.2rem rgba(212, 191, 170, 0.25);
+  background-color: #2A2F38;
+  color: #F6F4EC;
+}
+
+.btn-outline-light {
+  border-color: #F6F4EC;
+  color: #F6F4EC;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #F6F4EC;
+  color: #1C1F26;
+}
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 3rem 1rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
+
 /* Footer styling */
+
 .footer {
   background-color: #1C1F26;
   color: #F6F4EC;
