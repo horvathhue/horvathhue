@@ -123,6 +123,40 @@ img {
   }
 }
 
+#portfolio {
+  background-color: #1C1F26;
+  color: #F6F4EC;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.carousel-item {
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(90%) sepia(10%) saturate(120%) hue-rotate(15deg);
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 300px;
+  }
+}
+
+.carousel-item img {
+  max-width: 600px; /* keeps it balanced on big screens */
+  width: 100%;
+  height: auto;
+}
+
 /* Footer styling */
 
 .footer {
