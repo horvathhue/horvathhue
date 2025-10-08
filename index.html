@@ -147,11 +147,13 @@
 	<section id="before-after" class="py-5 text-center">
 	  <div class="container">
 		<h2 class="notable-regular text-ivory mb-4">Before / After</h2>
-		<div class="ba-container mx-auto">
-		  <img src="images/before.jpg" alt="Before" class="ba-image">
-		  <div class="ba-overlay">
-			<img src="images/after.jpg" alt="After" class="ba-image">
+
+		<div class="ba-wrapper mx-auto">
+		  <div class="ba-image-container">
+			<img src="images/before.jpg" alt="Before" class="ba-img">
+			<img src="images/after.jpg" alt="After" class="ba-img ba-img--after">
 		  </div>
+
 		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider">
 		</div>
 	  </div>
@@ -216,10 +218,12 @@ function setLanguage(lang) {
   document.getElementById(`lang-${lang}`).classList.add('active');
   console.log("Language switched to:", lang);
 }
- 	const slider = document.getElementById('ba-slider');
-    const overlay = document.querySelector('.ba-overlay');
+ 	 const slider = document.getElementById("ba-slider");
+  const afterImg = document.querySelector(".ba-img--after");
 
-    slider.addEventListener('input', function() {
-    overlay.style.width = this.value + '%';});
+  slider.addEventListener("input", function () {
+    const value = this.value;
+    afterImg.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+  });
 </script>
 </html>
