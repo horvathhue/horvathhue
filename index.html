@@ -100,64 +100,43 @@
     </div>
   </div>
 	 
-	<section id="portfolio" class="py-5">
-	  <div class="container text-center">
-		<h2 class="notable-regular text-ivory mb-4">Selected Works</h2>
-
-		<div id="workCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-		  <div class="carousel-inner">
-
-			<!-- Image 1 -->
-			<div class="carousel-item active">
-			  <div class="d-flex justify-content-center">
-				<img src="images/marsaxlokk.jpg" class="carousel-img rounded shadow" alt="Work 1">
-			  </div>
-			</div>
-
-			<!-- Image 2 -->
-			<div class="carousel-item">
-			  <div class="d-flex justify-content-center">
-				<img src="images/marsaxlokk4.jpg" class="carousel-img rounded shadow" alt="Work 2">
-			  </div>
-			</div>
-
-			<!-- Image 3 -->
-			<div class="carousel-item">
-			  <div class="d-flex justify-content-center">
-				<img src="images/marsaxlokk5.jpg" class="carousel-img rounded shadow" alt="Work 3">
-			  </div>
-			</div>
-
-		  </div>
-
-		  <!-- Controls -->
-		  <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		  </button>
-
-		  <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		  </button>
-		</div>
-	  </div>
-	</section>
+	 <!-- SLIDERS -->
 	 
 	<section id="before-after" class="py-5 text-center">
 	  <div class="container">
-		<h2 class="notable-regular text-ivory mb-4">Before / After</h2>
+		<h2 class="notable-regular text-ivory mb-5">Before / After</h2>
 
+		<!-- ===== Slider 1 ===== -->
+		<div class="ba-wrapper mx-auto mb-5">
+		  <div class="ba-image-container">
+			<img src="images/before.jpg" alt="Before 1" class="ba-img">
+			<img src="images/after.jpg" alt="After 1" class="ba-img ba-img--after">
+		  </div>
+		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-1">
+		</div>
+
+		<!-- ===== Slider 2 ===== -->
+		<div class="ba-wrapper mx-auto mb-5">
+		  <div class="ba-image-container">
+			<img src="images/before.jpg" alt="Before 2" class="ba-img">
+			<img src="images/after.jpg" alt="After 2" class="ba-img ba-img--after">
+		  </div>
+		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-2">
+		</div>
+
+		<!-- ===== Slider 3 ===== -->
 		<div class="ba-wrapper mx-auto">
 		  <div class="ba-image-container">
-			<img src="images/before.jpg" alt="Before" class="ba-img">
-			<img src="images/after.jpg" alt="After" class="ba-img ba-img--after">
+			<img src="images/before.jpg" alt="Before 3" class="ba-img">
+			<img src="images/after.jpg" alt="After 3" class="ba-img ba-img--after">
 		  </div>
-
-		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider">
+		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-3">
 		</div>
+
 	  </div>
 	</section>
+	 
+	 
 	 
 	 <section id="contact" class="py-5">
   <div class="container">
@@ -218,12 +197,12 @@ function setLanguage(lang) {
   document.getElementById(`lang-${lang}`).classList.add('active');
   console.log("Language switched to:", lang);
 }
- 	 const slider = document.getElementById("ba-slider");
-  const afterImg = document.querySelector(".ba-img--after");
-
-  slider.addEventListener("input", function () {
-    const value = this.value;
-    afterImg.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+ const sliders = document.querySelectorAll('.ba-slider');
+  sliders.forEach(slider => {
+    const afterImg = slider.previousElementSibling.querySelector('.ba-img--after');
+    slider.addEventListener('input', function () {
+      afterImg.style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+    });
   });
 </script>
 </html>
