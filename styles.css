@@ -122,44 +122,6 @@ img {
   }
 }
 
-#portfolio {
-  background-color: #1C1F26;
-  color: #F6F4EC;
-}
-
-/* Smooth animation fix */
-.carousel-item {
-  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
-}
-
-/* Centered, responsive images */
-.carousel-img {
-  width: 50%;
-  max-width: 700px;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .carousel-img {
-    width: 70%;
-  }
-}
-
-@media (max-width: 576px) {
-  .carousel-img {
-    width: 100%;
-  }
-}
-
-/* Subtle custom arrows */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(90%) sepia(10%) saturate(120%) hue-rotate(15deg);
-  width: 2rem;
-  height: 2rem;
-}
 
 #before-after {
   background-color: #1C1F26;
