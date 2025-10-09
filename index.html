@@ -268,6 +268,15 @@
 		});
 	  });
 	  
+	  document.addEventListener("scroll", () => {
+	  const topbar = document.querySelector(".topbar");
+	  if (window.scrollY > 100) {
+		topbar.classList.add("scrolled");
+	  } else {
+		topbar.classList.remove("scrolled");
+	  }
+	});
+	  
    </script>
 	
 </html>
