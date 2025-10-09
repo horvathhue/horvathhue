@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #1C1F26 0%, #2A2F38 100%);
+  background: #1C1F26;
   color: #F6F4EC;
   font-family: "Poppins", sans-serif;
 }
@@ -16,6 +16,13 @@ body {
   min-height: 100vh;
 }
 
+.text-ivory-75 {
+  color: rgba(248, 245, 228, 0.75);
+}
+
+#about {
+  background: linear-gradient(180deg, #1C1F26 0%, #242833 100%);
+}
 .text-ivory {
   color: #F6F4EC;
 }
