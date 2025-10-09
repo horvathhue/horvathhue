@@ -47,15 +47,29 @@
 <body>
  <main class="flex-grow-1">
 	
-	<!--Top Bar Code-->
-	
-	<div class="topbar notable-regular d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 px-4 py-3">
-  	<div class="brand-name text-ivory text-center">HORVATH HUE</div>
+	<!-- Top Bar Code -->
+	<div class="topbar notable-regular d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 px-4 py-3" style="height: 60px;">
 
-  	<div class="lang-switch position-absolute end-0 me-4">
-   	 	<button id="lang-en" class="lang-btn active" onclick="setLanguage('en')">ENG</button> /
-    	<button id="lang-hu" class="lang-btn" onclick="setLanguage('hu')">HU</button>
-  	</div>
+	  <!-- CONTACT button (left) -->
+	  <div class="position-absolute start-0 ms-4">
+		<button 
+		  class="lang-btn inter-regular" 
+		  style="font-size: 1rem; letter-spacing: 1px;" 
+		  onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">
+		  CONTACT
+		</button>
+	  </div>
+
+	  <!-- Brand name centered -->
+	  <div class="brand-name text-ivory text-center position-absolute top-50 start-50 translate-middle">
+		HORVATH HUE
+	  </div>
+
+	  <!-- Language switch (right) -->
+	  <div class="lang-switch position-absolute end-0 me-4">
+		<button id="lang-en" class="lang-btn active" onclick="setLanguage('en')">ENG</button> /
+		<button id="lang-hu" class="lang-btn" onclick="setLanguage('hu')">HU</button>
+	  </div>
 	</div>
 
 	<div class="container py-5">
@@ -104,17 +118,30 @@
       </div>
 
       <!-- Right: Description -->
-      <div class="col-md-6">
-        <h2 class="fw-light text-ivory inter-regular mb-3">Hello,</h2>
-        <p class="lead inter-regular text-ivory-75">
-          I’m a colorist passionate about shaping stories through tone, light, and atmosphere.  
-          My work focuses on creating cohesive visual worlds — translating emotion into color harmony.
-        </p>
-        <p class="inter-regular text-ivory-75">
-          From commercial pieces to cinematic short films, I approach every frame with detail and purpose.  
-          Collaboration and creative trust are the foundation of every project I take on.
-        </p>
-      </div>
+		<div class="col-md-6">
+		  <h2 class="fw-light text-ivory inter-regular mb-3">Hi, I’m Daniel.</h2>
+
+		  <p class="inter-regular text-ivory-75 mb-3">
+			I bring stories to life through color, from music videos, documentaries, and short films to commercials, visualizers, and personal projects.
+		  </p>
+
+		  <p class="inter-regular text-ivory-75 mb-3">
+			For me, color is about more than just visuals. It shapes the audience’s emotions. It tells us how to feel before we even notice it.
+		  </p>
+
+		  <p class="inter-regular text-ivory-75 mb-3">
+			It’s one of the last steps in post-production, yet it’s often the first thing to guide your story before a single word is spoken.
+		  </p>
+
+		  <p class="inter-regular text-ivory-75 mb-4">
+			I’m excited to create the right mood for your next project.
+		  </p>
+
+		  <!-- Signature placeholder -->
+		  <div class="signature-placeholder text-right mt-3">
+			<img src="images/signaturelowres_white.png" alt="Daniel Horvath Signature" class="img-fluid" style="max-width: 150px;">
+		  </div>
+		</div>
 
     </div>
   </div>
@@ -213,11 +240,13 @@
 </body>
 	
   <script>
+	  
 	function setLanguage(lang) {
 	  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
 	  document.getElementById(`lang-${lang}`).classList.add('active');
 	  console.log("Language switched to:", lang);
 	}
+	  
 	 const sliders = document.querySelectorAll('.ba-slider');
 	  sliders.forEach(slider => {
 		const afterImg = slider.previousElementSibling.querySelector('.ba-img--after');
@@ -225,6 +254,16 @@
 		  afterImg.style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
 		});
 	  });
+	  
+	  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth'
+		  });
+		});
+	  });
+	  
    </script>
 	
 </html>
