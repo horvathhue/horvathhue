@@ -74,48 +74,61 @@ li {
   color: #F6F4EC;
 }
 
+/* Topbar base */
 .topbar {
   background-color: #1C1F26;
+  transition: background-color 0.5s ease;
+  z-index: 1000;
+}
+
+/* Animated color pulse */
+@keyframes colorPulse {
+  0% { background: linear-gradient(90deg, #1C1F26, #242833); }
+  50% { background: linear-gradient(90deg, #2A2F38, #1C1F26); }
+  100% { background: linear-gradient(90deg, #1C1F26, #242833); }
+}
+
+.topbar.dynamic {
+  animation: colorPulse 10s infinite ease-in-out;
+}
+
+/* Keep brand text readable */
+.brand-name {
   color: #F6F4EC;
-  font-size: 1.8rem;
-  letter-spacing: 2px;
-  position: relative;
+  font-size: 1.2rem;
 }
 
-.lang-switch {
+/* Contact button styling */
+.contact-btn {
   position: absolute;
-  right: 1.5rem; /* adjust spacing from edge */
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  opacity: 0.85;
-}
-
-.lang-btn {
-  background: none;
+  left: 1.5rem;
+  color: #F6F4EC;
+  background: transparent;
   border: none;
-  color: inherit;
-  padding: 0;
-  margin: 0 2px;
-  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
   text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.lang-btn:hover {
-  opacity: 1;
+.contact-btn:hover {
+  color: #D4BFAA;
+}
+
+/* Language buttons stay the same */
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: #F6F4EC;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .lang-btn.active {
-  text-decoration: underline;
-  opacity: 1;
+  color: #D4BFAA;
 }
 
-.lang-btn:focus {
-  outline: none;
-}
 img {
   object-fit: cover;
 }
