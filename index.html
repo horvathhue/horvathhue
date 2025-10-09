@@ -47,34 +47,21 @@
 <body>
  <main class="flex-grow-1">
 	
-	<!-- Top Bar Code -->
-	<div class="topbar notable-regular d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 px-4 py-3" style="height: 60px;">
+	<div class="topbar notable-regular d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 px-4 py-3">
+	  <div class="brand-name text-ivory text-center">HORVATH HUE</div>
 
-	  <!-- CONTACT button (left) -->
-	  <div class="position-absolute start-0 ms-4">
-		<button 
-		  class="lang-btn inter-regular" 
-		  style="font-size: 1rem; letter-spacing: 1px;" 
-		  onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">
-		  CONTACT
-		</button>
+	  <div class="contact-link position-absolute start-0 ms-4">
+		<a href="#contact" class="lang-btn inter-regular">Contact</a>
 	  </div>
 
-	  <!-- Brand name centered -->
-	  <div class="brand-name text-ivory text-center position-absolute top-50 start-50 translate-middle">
-		HORVATH HUE
-	  </div>
-
-	  <!-- Language switch (right) -->
 	  <div class="lang-switch position-absolute end-0 me-4">
 		<button id="lang-en" class="lang-btn active" onclick="setLanguage('en')">ENG</button> /
 		<button id="lang-hu" class="lang-btn" onclick="setLanguage('hu')">HU</button>
 	  </div>
 	</div>
-
-	<div class="container-fluid py-5" style="background-color: #1C1F26;">
-	  <div class="row justify-content-center">
-		<div class="col-lg-8 col-md-10">
+		<div class="container-fluid py-5" style="background-color: #1C1F26;">
+		  <div class="row justify-content-center">
+			<div class="col-lg-8 col-md-10">
 
 		  <!-- Video wrapper -->
 		  <div style="padding:56.25% 0 0 0; position:relative;">
@@ -268,7 +255,7 @@
 		});
 	  });
 	  
-	  document.addEventListener("scroll", () => {
+	document.addEventListener("scroll", function () {
 	  const topbar = document.querySelector(".topbar");
 	  if (window.scrollY > 100) {
 		topbar.classList.add("scrolled");
@@ -276,7 +263,7 @@
 		topbar.classList.remove("scrolled");
 	  }
 	});
-	  
+
    </script>
 	
 </html>
