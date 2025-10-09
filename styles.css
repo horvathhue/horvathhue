@@ -28,10 +28,6 @@ body {
   position: relative;
 }
 
-.text-ivory {
-  color: #F6F4EC;
-}
-
 .lang-switch {
   position: absolute;
   right: 1.5rem; /* adjust spacing from edge */
@@ -227,6 +223,12 @@ img {
   font-style: normal;
 }
 
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* Headings */
 h1 {
