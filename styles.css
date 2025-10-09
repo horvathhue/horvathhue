@@ -76,54 +76,42 @@ li {
 
 /* Topbar base */
 .topbar {
-  background-color: transparent;
-  color: #F6F4EC;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  width: 100%;
+  background-color: #1C1F26; /* bar color */
+  color: #F6F4EC;           /* text color */
+  text-align: center;       /* center text */
+  padding: 20px 0;          /* space inside bar */
+  font-size: 20px;          /* text size */
+  font-weight: bold;
+  position: fixed;          /* stays at top */
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 
-.topbar.scrolled {
-  background-color: #1C1F26; /* new color when scrolling */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* Animated color pulse */
-@keyframes colorPulse {
-  0% { background: linear-gradient(90deg, #1C1F26, #242833); }
-  50% { background: linear-gradient(90deg, #2A2F38, #1C1F26); }
-  100% { background: linear-gradient(90deg, #1C1F26, #242833); }
-}
-
-.topbar.dynamic {
-  animation: colorPulse 10s infinite ease-in-out;
-}
-
-/* Keep brand text readable */
-.brand-name {
-  color: #F6F4EC;
-  font-size: 1.2rem;
-}
-
-/* Contact button styling */
-.contact-btn {
+/* Contact link (matches topbar style) */
+.contact-link {
   position: absolute;
   left: 1.5rem;
-  color: #F6F4EC;
-  background: transparent;
-  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-link a {
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: #F6F4EC;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.contact-btn:hover {
-  color: #D4BFAA;
+.contact-link a:hover {
+  opacity: 1;
 }
 
-/* Language buttons stay the same */
+/* Language selector (kept the improved look) */
+
 .lang-btn {
   background: transparent;
   border: none;
