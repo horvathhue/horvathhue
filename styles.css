@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 /* Base text style */
+
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
 }
 
 /* Headings */
+
 h1 {
   font-size: 45px;
   color: #222;
@@ -31,6 +33,7 @@ h3 {
 }
 
 /* Paragraphs */
+
 p {
   font-size: 16px;
   color: #555;
@@ -38,6 +41,7 @@ p {
 }
 
 /* Links */
+
 a {
   color: #0066cc;
   text-decoration: none;
@@ -49,6 +53,7 @@ a:hover {
 }
 
 /* Lists */
+
 ul, ol {
   margin: 10px 0 20px 40px;
   font-size: 16px;
@@ -59,13 +64,36 @@ li {
   margin-bottom: 8px;
 }
 
+.text-ivory-75 {
+  color: rgba(248, 245, 228, 0.75);
+}
+
+.palette-mosaic-regular {
+  font-family: "Palette Mosaic", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.notable-regular {
+  font-family: "Notable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SHOWREEL */
+
 .video-section {
   background-color: #1C1F26;
 }
 
-.text-ivory-75 {
-  color: rgba(248, 245, 228, 0.75);
-}
+/* ABOUT */
 
 #about {
   background: #242833;
@@ -75,6 +103,7 @@ li {
 }
 
 /* Topbar base */
+
 .topbar {
   width: 100%;
   background-color: #1C1F26; /* bar color */
@@ -90,6 +119,7 @@ li {
 }
 
 /* Contact link (matches topbar style) */
+
 .contact-link {
   position: absolute;
   left: 1.5rem;
@@ -122,12 +152,15 @@ li {
 }
 
 .lang-btn.active {
-  color: #D4BFAA;
+  border-bottom: 2px solid #D4BFAA;  /* Underline for active language */
+  padding-bottom: 0.5px;               /* Slight spacing for balance */
 }
 
 img {
   object-fit: cover;
 }
+
+/* BEFORE/AFTER */
 
 #before-after {
   background-color: #1C1F26;
@@ -135,6 +168,7 @@ img {
 }
 
 /* Outer container */
+
 .ba-wrapper {
   position: relative;
   width: 100%;
@@ -143,6 +177,7 @@ img {
 }
 
 /* Image wrapper */
+
 .ba-image-container {
   position: relative;
   width: 100%;
@@ -151,6 +186,7 @@ img {
 }
 
 /* Base image */
+
 .ba-img {
   display: block;
   width: 100%;
@@ -160,6 +196,7 @@ img {
 }
 
 /* The "after" image (top layer) */
+
 .ba-img--after {
   position: absolute;
   top: 0;
@@ -170,6 +207,7 @@ img {
 }
 
 /* Slider (invisible except handle) */
+
 .ba-slider {
   position: absolute;
   top: 0;
@@ -185,6 +223,7 @@ img {
 }
 
 /* Vertical divider handle */
+
 .ba-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -201,6 +240,8 @@ img {
   border: none;
   cursor: ew-resize;
 }
+
+ /* CONTACT */
 
 #contact {
   background-color: #1C1F26;
@@ -272,22 +313,4 @@ img {
 
 .footer-content a:hover {
   color: #D4BFAA; /* subtle warm ivory hover */
-}
-.palette-mosaic-regular {
-  font-family: "Palette Mosaic", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.notable-regular {
-  font-family: "Notable", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.inter-regular {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
