@@ -24,7 +24,7 @@
 	
 	<div class="topbar notable-regular d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 px-4 py-3">
 	  <div class="brand-name text-ivory text-center" style="font-size: 1.5rem; letter-spacing: 1px;">
-		<a href="#top" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='inherit'" onmouseout="this.style.color='inherit'" onfocus="this.style.color='inherit'">HORVATH HUE</a>
+		<a href="#top" style="color: inherit; text-decoration: none;">HORVATH HUE</a>
 	  </div>
 
 	  <div class="contact-link position-absolute start-0 ms-4">
@@ -32,10 +32,11 @@
 	  </div>
 
 	  <div class="lang-switch position-absolute end-0 me-4">
-	  <button id="lang-en" class="lang-btn active" onclick="window.location.href='index.html'">ENG</button> /
-	  <button id="lang-hu" class="lang-btn" onclick="window.location.href='index-hu.html'">HU</button>
+		<button id="lang-en" class="lang-btn" onclick="window.location.href='index.html'">ENG</button> /
+		<button id="lang-hu" class="lang-btn" onclick="window.location.href='index-hu.html'">HU</button>
 	  </div>
 	</div>
+
 	 
 	 <!-- SHOWREEL 2025 -->
 	 
@@ -238,11 +239,16 @@
 	
   <script>
 	  
-	function setLanguage(lang) {
-	  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-	  document.getElementById(`lang-${lang}`).classList.add('active');
-	  console.log("Language switched to:", lang);
-	}
+	// Determine current page and highlight the corresponding language button
+	  const currentPath = window.location.pathname; // e.g., "/index.html" or "/index-hu.html"
+	  const btnEN = document.getElementById("lang-en");
+	  const btnHU = document.getElementById("lang-hu");
+
+	  if (currentPath.includes("index-hu.html")) {
+		btnHU.classList.add("active");
+	  } else {
+		btnEN.classList.add("active");
+	  }
 	  
 	 const sliders = document.querySelectorAll('.ba-slider');
 	  sliders.forEach(slider => {
