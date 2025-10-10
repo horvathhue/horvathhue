@@ -87,6 +87,18 @@ li {
   font-style: normal;
 }
 
+/* TOPBAR */
+
+.brand-name a {
+  color: inherit;          /* keep the original text color */
+  text-decoration: none;   /* keep it underlined or not, as needed */
+}
+
+.brand-name a:hover {
+  color: inherit;          /* disables hover color change */
+  text-decoration: none;   /* optional: remove underline on hover */
+}
+
 /* SHOWREEL */
 
 .video-section {
