@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home | HORVATH HUE</title>
+	
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Notable&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrap CSS -->
+	
+	<link
+ 	 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  		rel="stylesheet"
+  		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+  		crossorigin="anonymous"/>
+	
+	<script>
+	  // Simple route-style redirect for clean URLs
+	  const path = window.location.pathname;
+
+	  if (path.endsWith("/home")) {
+		window.location.replace("/home.html");
+	  } else if (path.endsWith("/home/hu")) {
+		window.location.replace("/home-hu.html");
+	  }
+	</script>
+	
+</head>
+
+<body id="top">
+ <main class="flex-grow-1">
+	
+	<div class="topbar notable-regular d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 px-4 py-3">
+	  <div class="brand-name text-ivory text-center" style="font-size: 1.5rem; letter-spacing: 1px;">
+		<a href="#top" style="color: inherit; text-decoration: none;">HORVATH HUE</a>
+	  </div>
+
+	  <div class="contact-link position-absolute start-0 ms-4">
+		<a href="#contact" class="lang-btn inter-regular">CONTACT</a>
+	  </div>
+
+	  <div class="lang-switch position-absolute end-0 me-4">
+	  <button id="lang-en" class="lang-btn" onclick="window.location.href='/home'">ENG</button> /
+	  <button id="lang-hu" class="lang-btn" onclick="window.location.href='/home/hu'">HU</button>
+	  </div>
+	</div>
+
+	 
+	 <!-- SHOWREEL 2025 -->
+	 
+		<div class="container-fluid" style="background-color: #1C1F26; padding-top: 100px; padding-bottom: 40px;">
+		  <div class="row justify-content-center">
+			<div class="col-lg-8 col-md-10">
+
+			    <!-- Video -->
+				
+			 <div style="padding:56.25% 0 0 0;position:relative;">
+				 <iframe src="https://player.vimeo.com/video/1126635844?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SHOWREEL 2025"></iframe>
+			  </div>
+			  <script src="https://player.vimeo.com/api/player.js"></script>
+
+			  <!-- Video title -->
+			  <h2 class="text-center fw-light notable-regular mt-4" style="color: #F6F4EC; font-size: 20px;">Showreel 2025</h2>
+			</div>
+		  </div>
+		</div>
+	
+	 <!-- ABOUT -->
+	 
+  	<section id="about" class="py-5 text-center text-md-start">
+	  <div class="container">
+		<div class="row align-items-center justify-content-center">
+
+		  <!-- Left: Image + Text -->
+			
+		  <div class="col-md-5 mb-4 mb-md-0 text-center">
+			<img
+			  src="images/profilephoto.jpg"
+			  alt="Profile Photo"
+			  class="img-fluid rounded-circle shadow mb-3"
+			  style="width: 280px; height: 280px; object-fit: cover;"
+			>
+			<h3 class="notable-regular text-ivory mt-3 mb-1">Daniel Horvath</h3>
+			<p class="small inter-regular text-ivory">
+			  Colorist • Visual Storyteller • Based in Europe
+			</p>
+		  </div>
+
+      	 <!-- Right: Description -->
+			
+			<div class="col-md-6">
+			  <h2 class="fw-light text-ivory inter-regular mb-3">Hi, I’m <span style="color: #F3A97A; font-weight: 400;">Daniel</span>.</h2>
+
+			  <p class="inter-regular text-ivory-75 mb-3">
+				I bring stories to life through <strong style="color: #F3A97A;">color</strong>, from 
+				music videos, documentaries, and short films to commercials, visualizers, and personal projects.
+			  </p>
+
+			  <p class="inter-regular text-ivory-75 mb-3">
+				For me, color is about more than just visuals — 
+				it shapes the audience’s <strong style="color: #F3A97A;">emotions</strong> and tells us how to feel before we even notice it.
+			  </p>
+
+			  <p class="inter-regular text-ivory-75 mb-3">
+				It’s one of the last steps in post-production, yet often the first thing 
+				to guide your <strong style="color: #F3A97A;">story</strong> before a single word is spoken.
+			  </p>
+
+			  <p class="inter-regular text-ivory-75 mb-4">
+				I’m excited to create the right <strong style="color: #F3A97A;">mood</strong> for your next project.
+			  </p>
+
+			  <!-- Signature placeholder -->
+			  <div class="signature-placeholder text-right mt-3">
+				<img src="images/signaturelowres_orange.png" 
+					 alt="Daniel Horvath Signature" 
+					 class="img-fluid" 
+					 style="max-width: 150px;">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</section>
+	 
+	<!-- SLIDERS -->
+	 
+	<section id="before-after" class="py-5 text-center">
+	  <div class="container">
+		<h2 class="notable-regular text-ivory mb-3">Before / After</h2>
+		<p class="inter-regular text-ivory-75 mb-4" style="font-size: 0.95rem;">
+		  Reveal the transformation. <strong style="color: #F3A97A;">Drag</strong> the divider to explore the before and after.
+		</p>
+
+		<!-- ===== Slider 1 ===== -->
+		<div class="ba-wrapper mx-auto mb-4">
+		  <div class="ba-image-container">
+			<img src="images/after1.jpg" alt="After 1" class="ba-img">
+			<img src="images/before1.jpg" alt="Before 1" class="ba-img ba-img--after">
+		  </div>
+		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-1">
+		  <p class="text-end text-ivory" style="font-size: 0.85rem; font-family: 'Inter', sans-serif; margin: 7px 0 0 0;">
+			NAC x Tiësto - Shirt Reveal
+		  </p>
+		  <p class="text-end text-ivory" style="font-size: 0.85rem; font-family: 'Inter', sans-serif; margin: 0;">
+			produced by GIG creative film production
+		  </p>
+		</div>
+
+		<!-- ===== Slider 2 ===== -->
+		<div class="ba-wrapper mx-auto mb-4">
+		  <div class="ba-image-container">
+			<img src="images/after2.jpg" alt="After 2" class="ba-img">
+			<img src="images/before2.jpg" alt="Before 2" class="ba-img ba-img--after">
+		  </div>
+		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-2">
+		  <p class="text-end text-ivory" style="font-size: 0.85rem; font-family: 'Inter', sans-serif; margin: 7px 0 0 0;">
+			The true colors of Malta (Short Visualizer)
+		  </p>
+		  <p class="text-end text-ivory" style="font-size: 0.85rem; font-family: 'Inter', sans-serif; margin: 0;">
+			Personal project
+		  </p>
+		</div>
+
+		<!-- ===== Slider 3 ===== -->
+		<div class="ba-wrapper mx-auto mb-1">
+		  <div class="ba-image-container">
+			<img src="images/after3.jpg" alt="After 3" class="ba-img">
+			<img src="images/before3.jpg" alt="Before 3" class="ba-img ba-img--after">
+		  </div>
+		  <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-3">
+		  <p class="text-end text-ivory" style="font-size: 0.85rem; font-family: 'Inter', sans-serif; margin: 7px 0 0 0;">
+			Left Behind (Short Film)
+		  </p>
+		  <p class="text-end text-ivory" style="font-size: 0.85rem; font-family: 'Inter', sans-serif; margin: 0;">
+			created at Breda University of Applied Sciences
+		  </p>
+		</div>
+	  </div>
+	</section>
+	 
+	<!-- CONTACT FORM -->
+	 
+	 <section id="contact" class="pt-1 pb-5">
+	  <div class="container">
+		<div class="row justify-content-center">
+		  <div class="col-lg-8 col-md-10 text-center">
+			<h2 class="notable-regular text-ivory mb-3">Contact Me</h2>
+			<p class="lead inter-regular text-ivory mb-4">
+			  For collaborations or business inquiries, email me directly at
+			  <a href="mailto:hello@horvathhue.com" class="contact-email" 
+				 style="color: #F3A97A; font-style: italic; font-weight: 500; text-decoration: none; transition: color 0.3s ease;">
+				hello@horvathhue.com
+			  </a>
+			  or use the form below.
+			</p>
+		  </div>
+		</div>
+
+		<div class="row justify-content-center">
+		  <div class="col-lg-6 col-md-8">
+			<form action="https://formspree.io/f/mgvnzrjo" method="POST" class="contact-form">
+			  <div class="mb-3">
+				<input type="text" class="form-control" name="name" placeholder="Your Name" required>
+			  </div>
+			  <div class="mb-3">
+				<input type="email" class="form-control" name="_replyto" placeholder="Your Email" required>
+			  </div>
+			  <div class="mb-3">
+				<textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+			  </div>
+			  <button type="submit" class="btn btn-outline-light w-100 py-2">Send Message</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	 
+</main>
+	
+	<!-- FOOTER -->
+	
+	<footer class="footer mt-auto">
+	  <div class="footer-content text-center">
+		<h3 class="brand-name notable-regular">Horvath Hue</h3>
+		  <p class="text-ivory">© 2025 HorvathHue. All rights reserved.</p>
+		  <div class="social-links">
+			<a href="https://instagram.com/horvath.hue" target="_blank">Instagram</a>
+			<span>•</span>
+			<a href="https://tiktok.com/@horvath.hue" target="_blank">TikTok</a>
+		  </div>
+	   </div>
+	 </footer>
+	
+	<!-- SCRIPTS -->
+	
+	<!-- Bootstrap JS Bundle (with Popper) -->
+	 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  		crossorigin="anonymous"></script>
+	
+  <script>
+	  
+	// Determine current page and highlight the corresponding language button
+	  const currentPath = window.location.pathname; // e.g., "/index.html" or "/index-hu.html"
+	  const btnEN = document.getElementById("lang-en");
+	  const btnHU = document.getElementById("lang-hu");
+
+	  if (currentPath.includes("index-hu.html")) {
+		btnHU.classList.add("active");
+	  } else {
+		btnEN.classList.add("active");
+	  }
+	  
+	 const sliders = document.querySelectorAll('.ba-slider');
+	  sliders.forEach(slider => {
+		const afterImg = slider.previousElementSibling.querySelector('.ba-img--after');
+		slider.addEventListener('input', function () {
+		  afterImg.style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+		});
+	  });
+	  
+	  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth'
+		  });
+		});
+	  });
+	  
+	document.addEventListener("scroll", function () {
+	  const topbar = document.querySelector(".topbar");
+	  if (window.scrollY > 100) {
+		topbar.classList.add("scrolled");
+	  } else {
+		topbar.classList.remove("scrolled");
+	  }
+	});
+
+	   // Disable right-click on all images
+	  document.addEventListener('contextmenu', function (e) {
+		if (e.target.tagName === 'IMG') {
+		  e.preventDefault();
+		}
+	  });
+	  
+   </script>
+  </body>
+</html>
